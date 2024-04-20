@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Sign Up Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="sign-up-form">
+         <h1>Sign up</h1>
+         <form>
+             <label for="fullname">Full Name:</label>
+             <input id="fullname" type="text" class="input-box" placeholder="Your name">
+             
+             <label for="email">Email:</label>
+             <input id="email" type="email" class="input-box" placeholder="Your email">
+             
+             <label for="password">Password:</label>
+             <input id="password" type="password" class="input-box" placeholder="Your Password">
+             
+             <p><span><input type="checkbox"></span> I agree to the terms and conditions</p>
+             
+             <button type="button" class="signup-btn">Sign up</button>
+         </form>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const signUpBtn = document.querySelector(".signup-btn");
+            
+                signUpBtn.addEventListener("click", function() {
+                    const fullNameInput = document.getElementById("fullname").value;
+                    const emailInput = document.getElementById("email").value;
+                    const passwordInput = document.getElementById("password").value;
+            
+                    console.log("Full Name:", fullNameInput);
+                    console.log("Email:", emailInput);
+                    console.log("Password:", passwordInput);
+            
+                   
+                });
+            });
+            
+            
+            </script>
+     </body>
+     
+     
+</html>
+
+
+
+body{
+margin: 0%;
+padding: 0%;
+font-family:sans-serif ;
+}
+.sign-up-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-up-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
 
