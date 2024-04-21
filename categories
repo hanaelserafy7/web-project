@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="categories v1 .css">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="#">Courses</a>
+    <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+            <a href="#">Business</a>
+            <a href="#">Development</a>
+            <a href="#">Finance&Accounting</a>
+        </div>
+    </div>
+    <a href="#">About</a>
+</div>
+<div class="categories_nav">
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Business</button>
+        <div class="dropdown-content1">
+            <a href="#">Entrepreneurship</a>
+            <a href="#">Sales</a>
+            <a href="#">Management</a>
+        </div>
+    </div>
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Development</button>
+        <div class="dropdown-content1">
+            <a href="#">Web Development</a>
+            <a href="#">Mobile Development</a>
+            <a href="#">Game Development</a>
+        </div>
+    </div>
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Finance&Accounting</button>
+        <div class="dropdown-content1">
+            <a href="#">Cryptocurrenccy & Blockchain</a>
+            <a href="#">Finance</a>
+            <a href="#">InvestiNg & Trading</a>
+</div>
+
+
+</body>
+</html>
 
