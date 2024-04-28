@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Header</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Courses</a>
+        <nav class="navigation">
+            <a href="#login">log in</a>
+            <a href="#signup">Sign up</a>
+            <i class="fas fa-search"></i>
+        </nav>
+        
+        
+    </header>
 
+    <!-- <section class="main"> -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+              <img src="img1.jpg" style="width:100%" alt="slide">
+              <div class="text1"><h1>Join courses now for free</h1>
+                <a href="#projects" class="btn1">Sign up for free</a>
+            </div>
+            </div>
+          
+            <div class="mySlides">
+              <img src="img2.jpg" style="width:100%" alt="slide">
+              <div class="text2"><h1>Multiple Courses in the palm of your hand</h1>
+                <a href="#projects" class="btn2">View available courses</a>
+            </div>
+            </div>
+          
+            <div class="mySlides">
+              <img src="img3.jpg" style="width:100%" alt="slide">
+              <div class="text3"><h2>Grow your career with courses plus</h2>
+                <a href="#projects" class="btn3">Join plus</a>
+            </div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div> -->
+          </div>
+          <br>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    <!-- </section> -->
+</body>
+</html>
+
+<CSS>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+ font-family: 'Poppins',sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: white;
+    text-decoration:none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation i{
+    color: white;
+    margin: 30px;
+}
+.navigation i:hover{
+    color: rgb(168, 165, 165);
+}
+.navigation a:hover{
+    color:rgb(168, 165, 165);
+}
+
+section{
+    padding: 100px 200px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 500px; /* You can adjust this height as needed */
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.mySlides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:rgb(168, 165, 165);
+}
+
+/* Caption text */
+.text1 {
+    color: black;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 90%;
+}
+.text2{
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    padding: 50%;
+    /* transform: translateX(-50%); */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.text3{
+  color: black;
+  position: absolute;
+  font-size: 18px;
+  top: 30%;
+  right: 34%;
+  padding: 50%;
+  /* transform: translateX(-50%); */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* .main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+.btn1{
+    color: black;
+    background-color:rgb(194, 192, 192);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.4em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 1.0s ease;
+}
+.btn1:hover{
+    background-color: rgb(168, 165, 165);
+    transform: scale(1.1);
+}
+.btn2{
+  color:black;
+    background-color:rgb(194, 192, 192);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.7em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 1.0s ease;
+}
+.btn2:hover{
+  background-color: rgb(168, 165, 165);
+  transform: scale(1.1);
+}
+.btn3{
+  color:black;
+    background-color:rgb(194, 192, 192);
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 0.6em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    transition: 1.0s ease;
+}
+.btn3:hover{
+  background-color: rgb(168, 165, 165);
+  transform: scale(1.1);
+}
+.social a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+</CSS>
