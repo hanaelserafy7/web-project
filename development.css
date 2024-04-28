@@ -44,9 +44,9 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Wrap items if they exceed container width */
-    justify-content: center; /* Center items horizontally */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
   .course {
     width: 300px;
