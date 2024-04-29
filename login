@@ -73,6 +73,13 @@
                     alert('Please fill in username and password');
                     return;
                 }
+if (username === 'admin' && password === 'adminpassword') {
+                    console.log('Logged in as admin');
+                    // Redirect or perform admin-specific actions
+                } else {
+                    console.log('Logged in as regular user');
+                    // Redirect or perform regular user actions
+                }
 
                 
                 console.log('Username:', username);
