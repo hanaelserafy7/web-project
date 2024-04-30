@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Operating Systems</title>
+    <style>
+      .button {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items:center;*/
+      }
+      .course {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .course h1 {
+        padding-top: 10px;
+        margin-top: 10px;
+        align-self: center;
+      }
+      .course img {
+        width: 500px;
+        height: 370px;
+        transition: all 1s ease-out;
+        margin-right: 15px;
+        object-fit: cover;
+      }
+
+      .course-sub-data {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+      img:hover {
+        width: 390px;
+        height: 390px;
+      }
+
+      .course-content {
+        padding: 0px;
+        
+      }
+
+      .course-data {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 0 40px;
+      }
+      .price-box {
+        border: 2px solid black;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        float: right;
+        margin-top: 20px;
+        margin-right: 15px;
+      }
+      .discount {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        float: center;
+      }
+      .buttons {
+        clear: both; /* Clear floated elements */
+        margin-top: 5px;
+        text-align: center; /* Align buttons to the right */
+        padding-right: 20px; /* Add some padding to the right */
+        position: -webkit-sticky;
+        position: sticky;
+        margin-left: 20px;
+      }
+      .button {
+        float: right;
+        padding: 10px 30px;
+        background-color: blue; /* Blue background */
+        color: white; /* White text */
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        position: -webkit-sticky;
+        position: sticky;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <header>IT & Networks</header>
+    <section>
+      <div class="container">
+        <div class="course">
+          <h1>Introduction to Operating Systems</h1>
+
+          <div class="course-data">
+            <div class="course-sub-data">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0WiCca0oaKFwkJIOGpHV6NE5s2IINOwkBg&s"
+                alt="Introduction to Operating Systems"
+              />
+              <div class="price-box">
+                <p><s>Original Price: $320</s></p>
+                <p class="discount">Discount: 25%</p>
+                <p>Final Price: $240</p>
+              </div>
+
+              <div class="buttons">
+                <br />
+                <a href="#" class="button">Enroll Now</a>
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="course-content">
+              <p><strong>Level: Beginner</strong></p>
+              <p>
+                <strong>Description:<br /><br /></strong>This specialization covers introductory level operating system ideas, techniques, and implementations. 
+                The specialization is divided into four parts: <br>(1) Virtualization; and (2) Memory Management. 
+                (3) Concurrency, (4) Persistence. Examples of practical applications include implementing a command line interpreter, and multi-threaded operating system tools.
+                and corresponding system components using simplified
+                explanations of all components, clear diagrams, and use cases.
+              </p>
+              <p><strong>Requirements: Recommended to have a programming experience</strong></p>
+              <table>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Learn how operating systems work</li>
+                      <li>Understand how applications run within the OS</li>
+                      <li>Write efficient applications leveraging the understanding OS works</li>
+                      <li>Understand the cost of system calls</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Understand how CPU executes processes</li>
+                      <li>The role of the kernel</li>
+                      <li>CPU Architecture and Caches</li>
+                      <li>Virtual Memory</li>
+                      <li>Socket Programming</li>
+                      <li>Storage and File system management</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <p>Who's this course for: </p>
+              <ul>
+                <li>
+                    Software Engineers who want truly understand the OS
+                </li>
+              </ul>
+              <p><strong>Instructor</strong><br />Eng. Jan Smith</p>
+              <p>
+                I’m a software engineer. My software journey started around 1998 when my uncle gave me a book titled `Learn Programming and Visual Basic 2.0`.
+              </p>
+              <p>
+                <strong>Rating:</strong> <span class="rating">4.6</span>/5
+                (based on 120 ratings)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
