@@ -35,7 +35,6 @@
       .course img {
         width: 370px;
         height: 370px;
-        border-radius: 50px;
         transition: all 1s ease-out;
         margin-right: 15px;
       }
