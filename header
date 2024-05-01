@@ -9,16 +9,18 @@
 </head>
 <body>
     
-    <header>
-        <div class="hamburger-menu">
+    <header >
+        <!-- <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>
+        </div> -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <div class="menu">
-            <input type="text" placeholder="Search">
-            <a href="#" class="signup">Sign Up</a>
-            <a href="#" class="login">Log In</a>
+            <input type="text" class="Search" placeholder="Search" >
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
             <hr>
             <div class="categories">
                 <p>Categories:</p>
@@ -28,84 +30,19 @@
                     <li><a href="#">Finance & Accounting</a></li>
                     <li><a href="#">IT & Software</a></li>
                     <li><a href="#">Design</a></li>
+                    <li><a href="#">Markting</a></li>
                 </ul>
             </div>
         </div>
-        <a href="#" class="logo">Courses</a>
+        <a href="#" class="logo">LearnHub</a>
         <nav class="navigation">
-            <a href="#login">log in</a>
-            <a href="#signup">Sign up</a>
+            <a href="login.html">log in</a>
+            <a href="signup.html">Sign up</a>
         </nav>
 
     </header>
-
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <a href="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" style="width:100%" alt="slide"></a>
-            <div class="text1"><h1>Join courses now for free</h1>
-              <a href="#signup" class="btn1">Sign up for free</a>
-          </div>
-          </div>
-        
-          <div class="mySlides">
-            <a href="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" class="photos"><img src="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" style="width:100%" alt="slide"></a>
-            <div class="text2"><h1>Multiple Courses in the palm of your hand</h1>
-              <a href="#projects" class="btn2">View available courses</a>
-          </div>
-          </div>
-        
-          <div class="mySlides">
-            <a href="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" style="width:100%" alt="slide"></a>
-            <div class="text3"><h1>Grow your career with courses plus</h1>
-              <a href="#projects" class="btn3">Join plus</a>
-          </div>
-          </div>
-        
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-            <!-- <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div> -->
-          <br>
-
-          <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-        
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-        
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                
-                slides[slideIndex - 1].style.display = "block";
-            }
-            
-        </script>
-    <!-- </section> -->
-</body>
-</html>
-
-<css>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
  font-family: 'Poppins',sans-serif;
@@ -114,11 +51,6 @@
  box-sizing: border-box;
  scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 header {
   background-color: black;
   width: 100%;
@@ -139,39 +71,61 @@ header {
   margin-left: 7%;
 }
 
-.hamburger-menu {
+.menu-icon {
+  display: block;
   cursor: pointer;
-  margin-bottom: 10px;
-
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }
 
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: transform 0.3s ease;
-}
 .menu {
   display: flex;
   display: none;
   flex-direction: column;
   align-items: flex-start;
-}
+  z-index: 1000;
+  position: absolute;
+  top:63px;
+  left: 0;
+  background-color:black !important;
+  width: 25%;
+  padding-left: 10px;
 
-.menu input[type="text"] {
+}
+.menu a{
+  transition: 1s ease;
+}
+.menu a:hover{
+background-color: #666;
+transform: scale(1.1);
+}
+.search{
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  font-size: 40px;
+}
+/* .menu input[type="text"] {
   width: 100%;
   margin-bottom: 10px;
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+} */
+input[type="checkbox"] {
+  display: none;
 }
 
+input[type="checkbox"]:checked ~ .menu {
+  display: block;
+}
 .menu a {
   text-decoration: none;
   color: white;
   margin-bottom: 10px;
   display: block;
+  width: 70px;
 }
 
 .menu hr {
@@ -219,7 +173,7 @@ header {
 }
 
 
-* {box-sizing:border-box}
+/* * {box-sizing:border-box} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -229,6 +183,7 @@ header {
   position: relative;
   justify-content: center;
   align-items: center;
+  z-index: 998;
 }
 .mySlides {
   width: 100%;
@@ -269,7 +224,7 @@ header {
 }
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -390,7 +345,6 @@ body {
     padding: 0.7em;
     letter-spacing: 1px;
     border-radius: 15px;
-
     transition: 1.0s ease;
     
 }
@@ -398,24 +352,149 @@ body {
   background-color: rgb(168, 165, 165);
   transform: scale(1.1);
 }
-.social a{
-    color: white;
-    font-size: 1.7em;
-    padding-right: 30px;
+.body1{
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10%;
+  max-width: 75%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.title{
-    display: flex;
-    justify-content: center;
-    color: blue;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
+.body1 h1{
+  text-align: center;
 }
-.content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.body1 p{
+  text-align: center;
+}
+.testimonials {
+  overflow-x: auto;
+  /* white-space:nowrap; */
+  display: inline-flex;
+  padding: 20px 0; /* Add padding to the testimonials container */
+  margin-top: 100px;
+  width: 100%;
 }
 
-<css>
+.testimonial-card {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Match the border-radius of the About Us card */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.testimonial-card h3 {
+  color: #333; /* Match the color of the About Us title */
+  margin-bottom: 10px; /* Add spacing between title and content */
+}
+
+.testimonial-card p{
+  color: #666; 
+  margin-bottom: 0;
+}
+
+
+
+   </style>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" style="width:100%" alt="slide"></a>
+            <div class="text1"><h1>Join courses now for free</h1>
+              <a href="#signup" class="btn1">Sign up for free</a>
+          </div>
+          </div>
+        
+          <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" class="photos"><img src="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" style="width:100%" alt="slide"></a>
+            <div class="text2"><h1>Multiple Courses in the palm of your hand</h1>
+              <a href="#projects" class="btn2">View available courses</a>
+          </div>
+          </div>
+        
+          <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" style="width:100%" alt="slide"></a>
+            <div class="text3"><h1>Grow your career with courses plus</h1>
+              <a href="#projects" class="btn3">Join plus</a>
+          </div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div> -->
+          <br>
+          <div class="body1">
+            <h1>About us</h1>
+            <p>At LearnHub, we are passionate about education and empowering individuals to reach their full potential through learning. With a diverse range of courses designed to cater to various interests and skill levels, we strive to provide an enriching and accessible learning experience for all. Our team of experienced educators and industry professionals is dedicated to delivering high-quality content that is both informative and engaging. Whether you're looking to enhance your professional skills, explore new interests, or pursue personal development, we have a course for you. Join us on this journey of discovery and unlock new opportunities for growth and success.</p>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <h3>Review 1</h3>
+              <p>I recently enrolled in a course on this platform, and I must say, it exceeded my expectations! The content was comprehensive, the instructors were knowledgeable, and the learning experience was truly enjoyable. I highly recommend it to anyone looking to expand their knowledge and skills.</p>
+              <p>- Yomna</p>
+            </div>
+            <div class="testimonial-card">
+              <h3>Review 2</h3>
+              <p>تجربة ممتازة! لقد استمتعت بشكل كبير بالدورة التدريبية التي قمت بالتسجيل فيها. المحتوى كان مفيداً للغاية وساعدني في تطوير مهاراتي بشكل كبير. أوصي بهذه الدورة لكل من يبحث عن تعلم جديد ومفيد</p>
+              <p>- Moatassem</p>
+            </div>
+            <div class="testimonial-card">
+                <h3>Review 3</h3>
+                <p>.تجربة سيئة جداً! للأسف، لم يكن الدورة التدريبية التي قمت بالتسجيل فيها مفيدة على الإطلاق. كانت المحاضرات غير واضحة والمواد غير منظمة، ولم أستفد بتاتاً منها. لا أنصح بها على الإطلاق</p>
+                <p>- Rawan</p>
+              </div>
+              <div class="testimonial-card">
+                <h3>Review 4</h3>
+                <p>I've been using this platform for a while now, and it's been a game-changer for me. The variety of courses available caters to all interests, and the flexibility of learning at my own pace is invaluable. I've already recommended it to all my friends!</p>
+                <p>- Norhan</p>
+              </div>
+              <div class="testimonial-card">
+                <h3>Review 5</h3>
+                <p>تجربة رائعة! كنت متردداً في البداية قبل التسجيل في الدورة، ولكن بمجرد بدء التعلم، وجدت نفسي متحمساً ومستمتعاً بكل درس. الدعم الفني كان ممتازاً وساعدني في حل أي مشكلة واجهتني. أشكر فريق العمل على تقديم تجربة تعليمية ممتازة</p>
+                <p>- Hana</p>
+              </div>
+          </div>
+
+          <div>
+
+          </div>
+
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        
+</body>
+</html>
