@@ -1,136 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <style>
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        
-        *{
-         font-family: 'Poppins',sans-serif;
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         scroll-behavior: smooth;
-        }
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
-        
-        header {
-          background-color: black;
-          width: 100%;
-          position: fixed;
-          z-index: 999;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 5%;
-        }
-        
-        .logo {
-          text-decoration: none;
-          color: white;
-          text-transform: uppercase;
-          font-weight: 700;
-          font-size: 1.8em;
-          margin-left: 7%;
-        }
-        
-        .hamburger-menu {
-          cursor: pointer;
-          margin-bottom: 10px;
-        
-        }
-        
-        .line {
-          width: 25px;
-          height: 3px;
-          background-color: #fff;
-          margin: 5px 0;
-          transition: transform 0.3s ease;
-        }
-        .menu {
-          display: flex;
-          display: none;
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        
-        .menu input[type="text"] {
-          width: 100%;
-          margin-bottom: 10px;
-          padding: 8px;
-          border-radius: 4px;
-          border: 1px solid #ccc;
-        }
-        
-        .menu a {
-          text-decoration: none;
-          color: white;
-          margin-bottom: 10px;
-          display: block;
-        }
-        
-        .menu hr {
-          width: 100%;
-          border: none;
-          border-top: 1px solid #ccc;
-          margin: 10px 0;
-        }
-        
-        .categories p {
-          font-weight: bold;
-          margin-bottom: 5px;
-        }
-        
-        .categories ul {
-          list-style-type: none;
-          padding: 0;
-        }
-        
-        .categories li {
-          margin-bottom: 5px;
-        }
-        
-        .categories li a {
-          color: white;
-          text-decoration: none;
-        }
-        
-        .categories li a:hover {
-          text-decoration: underline;
-        }
-        .navigation{
-          display: flex;
-        }
-        .navigation a {
-            color: white;
-            text-decoration:none;
-            font-size: 1.1em;
-            font-weight: 500;
-            /* padding-left: 30px; */
-            margin-left: 20px;
-        }
-        .navigation a:hover{
-            color:rgb(168, 165, 165);
-        }
-        
-        
-        * {box-sizing:border-box}
-        
-        
-            </style>
-        
-    <header>
-        <div class="hamburger-menu">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Header</title>
+</head>
+<body>
+    
+    <header >
+        <!-- <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>
+        </div> -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <div class="menu">
-            <input type="text" placeholder="Search">
-            <a href="#" class="signup">Sign Up</a>
-            <a href="#" class="login">Log In</a>
+            <input type="text" class="Search" placeholder="Search" >
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
             <hr>
             <div class="categories">
                 <p>Categories:</p>
@@ -140,18 +30,152 @@
                     <li><a href="#">Finance & Accounting</a></li>
                     <li><a href="#">IT & Software</a></li>
                     <li><a href="#">Design</a></li>
+                    <li><a href="#">Markting</a></li>
                 </ul>
             </div>
         </div>
-        <a href="#" class="logo">Courses</a>
+        <a href="#" class="logo">LearnHub</a>
         <nav class="navigation">
-            <a href="#login">log in</a>
-            <a href="#signup">Sign up</a>
+            <a href="login.html">log in</a>
+            <a href="signup.html">Sign up</a>
         </nav>
-
     </header>
-</body>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+ font-family: 'Poppins',sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-left: 7%;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.menu {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+  position: absolute;
+  top:63px;
+  left: 0;
+  background-color:black !important;
+  width: 25%;
+  padding-left: 10px;
+
+}
+.menu a{
+  transition: 1s ease;
+}
+.menu a:hover{
+background-color: #666;
+transform: scale(1.1);
+}
+.search{
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  font-size: 40px;
+}
+/* .menu input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+} */
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  display: block;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+  width: 70px;
+}
+
+.menu hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.categories p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 5px;
+}
+
+.categories li a {
+  color: white;
+  text-decoration: none;
+}
+
+.categories li a:hover {
+  text-decoration: underline;
+}
+.navigation{
+  display: flex;
+}
+.navigation a {
+    color: white;
+    text-decoration:none;
+    font-size: 1.1em;
+    font-weight: 500;
+    /* padding-left: 30px; */
+    margin-left: 20px;
+}
+.navigation a:hover{
+    color:rgb(168, 165, 165);
+}
 
 
 
-</html>
+
+
+    </style>  
+    </body>
+    </html>
