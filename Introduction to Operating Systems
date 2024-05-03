@@ -11,13 +11,13 @@
   <style>
     *{
      color:#505050;
+    
      font-size: 1.03em;
-     font-family: Arial, sans-serif;
+     font-family: 'Poppins', sans-serif;
     }
     h1{
       text-align: center;
       font-size: 1.1em;
-      
     }
     .button {
       font-family: Arial, sans-serif;
@@ -80,7 +80,7 @@
     .price-box {
       border: 2px solid black;
       padding: 20px;
-      width: 200px;
+      width: 400px;
       text-align: center;
       float: right;
       margin-top: 20px;
@@ -97,8 +97,6 @@
       margin-top: 5px;
       text-align: center; /* Align buttons to the right */
       padding-right: 20px; /* Add some padding to the right */
-      position: -webkit-sticky;
-      position: sticky;
       margin-left: 20px;
     }
     .button {
@@ -113,8 +111,6 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
-      position: -webkit-sticky;
-      position: sticky;
       transition: 1.0s ease;
     }
     .button:hover{
@@ -221,7 +217,7 @@
   overflow: hidden;
 }
 
-.dropdownbusiness .dropbtn1 {
+.dropdownbusiness .dropbtn1 a {
   font-size: 16px;
   border: none;
   outline: none;
@@ -338,6 +334,7 @@
                 <p><s>Original Price: $320</s></p>
                 <p class="discount">Discount: 25%</p>
                 <p>Final Price: $240</p>
+                <div id="timer"></div>
               </div>
 
               <div class="buttons">
@@ -400,5 +397,33 @@
         </div>
       </div>
     </section>
+    <script>
+        function countdown() {
+            const endTime = new Date();
+            endTime.setMonth(endTime.getMonth() + 2);
+
+            const timer = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = "Sale ends in: " + days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById("timer").innerHTML = "Sale has ended";
+                }
+            }, 1000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            countdown();
+        });
+    </script>
   </body>
 </html>
