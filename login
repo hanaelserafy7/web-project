@@ -2,55 +2,6 @@
 <html lang="en">
 <head>
     <title>Login</title>
-</head>
-<body>
-    <header>
-        <!-- <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <div class="menu">
-            <input type="text" class="Search" placeholder="Search" >
-            <a href="signup.html" class="signup">Sign Up</a>
-            <a href="login.html" class="login">Log In</a>
-            <hr>
-            <div class="categories">
-                <p>Categories:</p>
-                <ul>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Finance & Accounting</a></li>
-                    <li><a href="#">IT & Software</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Markting</a></li>
-                </ul>
-            </div>
-        </div>
-        <a href="#" class="logo">LearnHub</a>
-        <nav class="navigation">
-            <a href="login.html">log in</a>
-            <a href="signup.html">Sign up</a>
-        
-        </nav>
-   </header>
-
-    <div class="container">
-        <form id="loginForm">
-            <h2>Login</h2>
-            <div class="form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-    </div>
     <style>
         
         *{
@@ -185,15 +136,12 @@
         .container {
             width: 400px;
             height:300px;
-            margin-top:200px;
             margin:auto;
             padding: 50px;
             border: 1px solid grey;
             border-radius: 5px;
             align-items:center;
-            justify-content:center;
-                
-                   
+                  
         }
                 
         .form {
@@ -226,50 +174,59 @@
         button:hover {
             background-color: grey;
         }
-        body{
-            align-items:center;
-            justify-content: center;
-        }
-        .container {
-            width: 400px;
-            height:300px;
-            margin: auto;
-            padding: 50px;
-            border: 1px solid grey;
-            border-radius: 5px;
-        }
         
-        .form {
-            margin-bottom: 25px;
-        }
-        
-        label {
-            display: block;
-            font-weight: bold;
-        }
-        
-        input[type="text"],
-        input[type="password"] {
-            width: 70%;
-            padding: 4px;
-            font-size: 16px;
-        }
-        
-        button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: grey;
-        }
+       
     </style>
+</head>
+<body>
+    <header>
+        <!-- <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu">
+            <input type="text" class="Search" placeholder="Search" >
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
+            <hr>
+            <div class="categories">
+                <p>Categories:</p>
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Finance & Accounting</a></li>
+                    <li><a href="#">IT & Software</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Markting</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="logo">LearnHub</a>
+        <nav class="navigation">
+            <a href="login.html">log in</a>
+            <a href="signup.html">Sign up</a>
+        
+        </nav>
+   </header>
+
+    <div class="container">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('loginForm');
