@@ -1,0 +1,255 @@
+<html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   <!-- <link rel="stylesheet" href="projectt.css"> -->
+    <style>
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.categories_nav {
+    background-color: grey;
+    overflow: hidden;
+}
+
+.categories_nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.categories_nav:hover {
+    background-color: rgb(101, 95, 95);
+    color: black;
+}
+
+.dropdownbusiness {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdownbusiness .dropbtn1 {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+.dropdownbusiness:hover .dropdown-content1 {
+    display: block;
+}
+    </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="#">Courses</a>
+    <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+            <a href="#">Business</a>
+            <a href="development.html">Development</a>
+            <a href="Finance&Accounting.html">Finance&Accounting</a>
+            <a href="IT.html">IT&Software</a>
+            <a href="design.html">Design</a>
+            <a href="marketing.html">Marketing</a>
+        </div>
+    </div>
+    <a href="#">About</a>
+</div>
+
+<div class="categories_nav">
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Business</button>
+        <div class="dropdown-content1">
+            <a href="#">Entrepreneurship</a>
+            <a href="#">Sales</a>
+            <a href="#">Management</a>
+        </div>
+    </div>
+
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Development</button>
+        <div class="dropdown-content1">
+            <a href="webdev.html">Web Development</a>
+            <a href="mobiledev.html">Mobile Development</a>
+            <a href="gamedev.html">Game Development</a>
+        </div>
+    </div>
+
+    <div class="dropdownbusiness">
+        <button class="dropbtn1">Finance&Accounting</button>
+        <div class="dropdown-content1">
+            <a href="crypto.html">Cryptocurrenccy & Blockchain</a>
+            <a href="Finance.html">Finance</a>
+            <a href="invstg.html">Investing & Trading</a>
+        </div>
+    </div>
+
+<div class="dropdownbusiness">
+    <button class="dropbtn1">IT&Software</button>
+    <div class="dropdown-content1">
+        <a href="network.html">Network&Security</a>
+        <a href="Hardware.html">Hardware</a>
+        <a href="OS.html">Operating Systems&Servers</a>
+    </div>
+</div>
+
+<div class="dropdownbusiness">
+    <button class="dropbtn1">Design</button>
+    <div class="dropdown-content1">
+        <a href="webdes.html">Web Design</a>
+        <a href="Gamedes.html">Game Design</a>
+        <a href="graphicdes.html">Graphic Design&Illustration</a>
+    </div>
+</div>
+
+<div class="dropdownbusiness">
+    <button class="dropbtn1">Marketing</button>
+    <div class="dropdown-content1">
+        <a href="DigitalMarketing.html">Digital Marketing</a>
+        <a href="Branding.html">Branding</a>
+        <a href="PR.html">Public Relations</a>
+    </div>
+</div>
+</div>
+
+    <head>
+        <link rel="stylesheet" href="development.css">
+
+    </head>
+    <body>
+        <div class="topnav">
+                <h3>IT & Software</h3>           
+                <button class="sub">Network & Security</button>
+                <button class="sub">Hardware</button>
+                <button class="sub">Operating Systems & servers</button>
+
+        </div>
+        <div class="container">
+            <div class="course">
+              <h2> Foundations of Networking</h2>
+              <img src="https://img.freepik.com/free-vector/communication-technologies-concept-with-mobile-connection-social-network-broadcasting-elements-vector-illustration_1284-3128.jpg?size=626&ext=jpg&ga=GA1.1.1055511943.1714774335&semt=ais" alt="HTML Course Image">
+              <p>This course aims to provide you with a simplified overview of Computer Networks, applications in public safety,
+                and corresponding system components using simplified explanations of all components, clear diagrams, and use cases.</p>
+              <a href="html_course_page.html">Learn More</a>
+
+            </div>
+            <div class="course">
+                <h2> Introduction to Operating Systems</h2>
+                <img src="https://img.freepik.com/free-vector/cross-platform-software-concept-illustration_114360-7313.jpg?t=st=1714774747~exp=1714778347~hmac=ae81b4557b10211e82bdc690aed0215d4ed961d2cc21565fe2106179dac070e0&w=900" alt="JavaScript Course Image">
+                <p>This specialization covers introductory level operating system ideas, techniques, and implementations. The specialization is divided into four parts: (1) Virtualization; and (2) Memory Management. (3) Concurrency, (4) Persistence. Examples of practical applications include implementing a command line interpreter, and multi-threaded operating system tools.</p>
+                <a href="javascript_course_page.html">Learn More</a>
+              </div>
+              <div class="course">
+                <h2> Foundations of Cyber Security</h2>
+                <img src="https://img.freepik.com/free-photo/html-css-collage-concept-with-hacker_23-2150061984.jpg?t=st=1714774807~exp=1714778407~hmac=4ced7600c261e11a299fea38e3e353da54668f89ffecf3d8d76150e665c86fd4&w=900" alt="Cybersecurity course">
+                <p>This course is designed for personal and home cyber security, privacy and anonymity. Most of the topics apply in the same way to a business, but the course is delivered as if to an individual for personal cyber security, privacy, and anonymity.</p>
+                <a href="javascript_course_page.html">Learn More</a>
+              </div>
+              <div class="course">
+                <h2> Operating System Crash Course For Beginners</h2>
+                <img src="https://img.freepik.com/free-vector/technical-support-guys-working-repairing-computer-hardware-software-troubleshooting-fixing-problems-problem-checking-concept-bright-vibrant-violet-isolated-illustration_335657-364.jpg?t=st=1714775002~exp=1714778602~hmac=3662e2871ae0de5b4a4571e4fcc28757d1661700b7998f4c9f9eacfd8099f3ef&w=900" alt="Operating System">
+                <p>This specialization is intended for people with some programming experience who seek an approachable introduction to how operating systems work on a fundamental level. This course will equip learners with foundational knowledge of operating systems suitable for any developer roles.</p>
+                <a href="javascript_course_page.html">Learn More</a>
+              </div>
+              <div class="course">
+                <h2>How to Build a PC for beginners</h2>
+                <img src="https://miro.medium.com/v2/resize:fit:1358/1*7au_BU1G6Lxuak2ROz6zdw.png" alt="JavaScript Course Image">
+                <p>Learn how to easily build a high end computer from start to finish in this in-depth course.                </p>
+                <a href="javascript_course_page.html">Learn More</a>
+              </div>
+              <div class="course">
+                <h2>Computer Hardware Engineering</h2>
+                <img src="https://img.freepik.com/free-vector/it-engineer-isometric-compoisition_1284-25087.jpg?t=st=1714775156~exp=1714778756~hmac=38403065a553b7829ac3e459ddfbaf066d9a81fddfa6dd5554c9a67bd6a18210&w=826" alt="JavaScript Course Image">
+                <p>Computer Hardware Engineering involves design, development, and testing of computer systems and components. Computer hardware engineers work in organizations and research laboratories that build and test various types of computer models. </p>
+                <a href="javascript_course_page.html">Learn More</a>
+              </div>
+        </div>
+    </body>
+</html>
