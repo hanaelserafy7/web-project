@@ -51,7 +51,7 @@
              <label for="password">Password:</label>
              <input id="password" type="password" class="input-box" placeholder="Your Password">
              
-             <p><span><input type="checkbox"></span> I agree to the terms and conditions</p>
+             <p><span><input type="checkbox" ></span> I agree to the terms and conditions</p>
              
              <button type="button" class="signup-btn">Sign up</button>
          </form>
@@ -76,13 +76,8 @@
             
             
             </script>
-     </body>
-     
-     
-</html>
-
-----------------------------------------------------------------
-*{
+            <style>
+    *{
     font-family: 'Poppins',sans-serif;
     margin: 0;
     padding: 0;
@@ -151,13 +146,13 @@
      border-radius: 4px;
      border: 1px solid #ccc;
    } */
-   input[type="checkbox"] {
-     display: none;
-   }
-   
-   input[type="checkbox"]:checked ~ .menu {
-     display: block;
-   }
+   #menu-toggle[type="checkbox"] {
+            display: none;
+        }
+        
+        #menu-toggle[type="checkbox"]:checked ~ .menu {
+            display: block;
+        }
    .menu a {
      text-decoration: none;
      color: white;
@@ -240,8 +235,7 @@ body{
     }
     
     .input-box {
-       
-        width: calc(100% - 20px); /* Adjusted width to consider padding */
+        width: calc(100% - 20px);
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid black;
@@ -291,4 +285,8 @@ body{
     .signup-btn:hover {
         background-color: gray;
     }
-    
+            </style>
+     </body>
+     
+     
+</html>
