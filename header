@@ -26,18 +26,15 @@
                 <p>Categories:</p>
                 <ul>
                     <li><a href="#">Business</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Finance & Accounting</a></li>
-                    <li><a href="#">IT & Software</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Markting</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="finance.html">Finance & Accounting</a></li>
+                    <li><a href="IT.html">IT & Software</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="markting.html">Markting</a></li>
                 </ul>
             </div>
         </div>
-        <!-- <a href="#" class="logo">
-          <img src="title.jpg" alt="LearnHub Logo" width="150" height="100">
-      </a> -->
-        <a href="#" class="logo">LearnHub</a>
+        <a href="index.html" class="logo">LearnHub</a>
         <nav class="navigation">
             <a href="login.html">log in</a>
             <a href="signup.html">Sign up</a>
@@ -45,11 +42,11 @@
 
     </header>
     
-    <div class="slideshow-container">
+    <div class="slideshow-container" >
         <div class="mySlides">
             <a href="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" style="width:100%" alt="slide"></a>
             <div class="text1"><h1>Join courses now for free</h1>
-              <a href="#signup" class="btn1">Sign up for free</a>
+              <a href="signup.html" class="btn1">Sign up for free</a>
           </div>
           </div>
         
@@ -78,11 +75,11 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div> -->
           <br>
-          <div class="body1">
+          <div class="body1" id="about">
             <h1>About us</h1>
             <p>At LearnHub, we are passionate about education and empowering individuals to reach their full potential through learning. With a diverse range of courses designed to cater to various interests and skill levels, we strive to provide an enriching and accessible learning experience for all. Our team of experienced educators and industry professionals is dedicated to delivering high-quality content that is both informative and engaging. Whether you're looking to enhance your professional skills, explore new interests, or pursue personal development, we have a course for you. Join us on this journey of discovery and unlock new opportunities for growth and success.</p>
           </div>
-          <div class="testimonials">
+          <div class="testimonials" >
             <div class="testimonial-card">
               <h3>Review 1</h3>
               <p>I recently enrolled in a course on this platform, and I must say, it exceeded my expectations! The content was comprehensive, the instructors were knowledgeable, and the learning experience was truly enjoyable. I highly recommend it to anyone looking to expand their knowledge and skills.</p>
@@ -115,51 +112,46 @@
                 <h2>Contact Us</h2>
                 <p>Email: learnhub@gmail.com</p>
                 <p>Phone: +2 100 565 8748</p>
-                <a href="body1">About us</a>
+                <a href="#about" class="about">About us</a>
 
                 <!-- Add other contact information as needed -->
             </div>
             
             <h2>Popular Courses</h2>
             <ul class="course-list">
-                <li>Business</li>
-                <li>Development</li>
-                <li>Finance & Accounting</li>
-                <li>IT & Software</li>
-                <li>Design and Marketing</li>
+              <li><a href="#">Business</a></li>
+              <li><a href="development.html">Development</a></li>
+              <li><a href="finance.html">Finance & Accounting</a></li>
+              <li><a href="IT.html">IT & Software</a></li>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="markting.html">Markting</a></li>
             </ul>
             
-            <!-- Add other elements as needed -->
         </div>
 
           <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-        
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-        
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                
-                slides[slideIndex - 1].style.display = "block";
-            }
+            var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000); 
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
         </script>
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
  font-family: 'Poppins',sans-serif;
@@ -223,13 +215,7 @@ transform: scale(1.1);
   padding: 10px;
   font-size: 40px;
 }
-/* .menu input[type="text"] {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-} */
+
 input[type="checkbox"] {
   display: none;
 }
@@ -282,20 +268,14 @@ input[type="checkbox"]:checked ~ .menu {
     text-decoration:none;
     font-size: 1.1em;
     font-weight: 500;
-    /* padding-left: 30px; */
     margin-left: 20px;
 }
 .navigation a:hover{
     color:rgb(168, 165, 165);
 }
-
-
-/* * {box-sizing:border-box} */
-
-/* Slideshow container */
 .slideshow-container {
   width: 100%;
-  height: 500px; /* You can adjust this height as needed */
+  height: 500px;
   overflow: hidden;
   position: relative;
   justify-content: center;
@@ -306,8 +286,6 @@ input[type="checkbox"]:checked ~ .menu {
   width: 100%;
   height: 100%;
   position: absolute;
-  transition: opacity 1s ease-in-out;
-  
 }
 .photos{
   pointer-events: none;
@@ -318,7 +296,7 @@ input[type="checkbox"]:checked ~ .menu {
   object-fit:cover;
 
 }
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -334,21 +312,17 @@ input[type="checkbox"]:checked ~ .menu {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 body {
   margin: 0;
-  /* overflow: hidden; */
 }
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color:rgb(168, 165, 165);
 }
-
-/* Caption text */
 .text1 {
     color: black;
     position: absolute;
@@ -385,23 +359,10 @@ body {
     max-width: 90%;
     text-align: center;
 }
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
 
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -411,13 +372,6 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* .main{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-} */
-
 .btn1{
     color: black;
     background-color:rgb(194, 192, 192);
@@ -485,11 +439,17 @@ body {
 .body1 p{
   text-align: center;
 }
+.about{
+  color: white;
+  text-decoration: none;
+}
+.about:hover{
+text-decoration: underline;
+}
 .testimonials {
   overflow-x: auto;
-  /* white-space:nowrap; */
   display: inline-flex;
-  padding: 20px 0; /* Add padding to the testimonials container */
+  padding: 20px 0; 
   margin-top: 100px;
   width: 100%;
 }
@@ -499,14 +459,14 @@ body {
   width: 300px;
   margin-right: 20px;
   border: 1px solid #ccc;
-  border-radius: 10px; /* Match the border-radius of the About Us card */
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .testimonial-card h3 {
-  color: #333; /* Match the color of the About Us title */
-  margin-bottom: 10px; /* Add spacing between title and content */
+  color: #333; 
+  margin-bottom: 10px;
 }
 
 .testimonial-card p{
@@ -515,25 +475,31 @@ body {
 }
 .end-section {
   margin-top: 10%;
-  background-color: #333; /* Dark grey background */
-  color: #fff; /* White text color */
-  padding: 50px 0; /* Add padding for spacing */
-  text-align: center; /* Center align text */
+  background-color: #333;
+  color: #fff; 
+  padding: 50px 0; 
+  text-align: center; 
 }
 
 .course-list {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin-top: 20px; /* Add margin at the top */
+  list-style-type: none; 
+  padding: 0; 
+  margin-top: 20px; 
 }
 
 .course-list li {
-  margin-bottom: 10px; /* Add margin between list items */
+  margin-bottom: 10px;
 }
 
-/* Additional styles */
+.course-list a{
+  color: white;
+  text-decoration: none;
+}
+.course-list a:hover{
+  text-decoration: underline;
+}
 .contact-info {
-  margin-bottom: 20px; /* Add margin at the bottom */
+  margin-bottom: 20px; 
 }
 
 
