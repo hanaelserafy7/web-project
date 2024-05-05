@@ -1,0 +1,19 @@
+ <button onclick="search()">Search</button>
+function search(){
+        const searchTerm = document.getElementById("search").value;
+            if (searchTerm === "cyber security") {
+                window.location.href = "foundationsofcybersecurity.html";
+            }
+            else if(searchTerm==="operating system"){
+                window.location.href = "Operatingsystem.html";
+            }
+            else if(searchTerm==="finance"){
+                window.location.href = "finance.html";
+            }
+            else if(searchTerm==="design"){
+                window.location.href = "design.html";
+            }
+            else{
+                alert("No results found for '" + searchTerm + "'");
+            }
+    }
