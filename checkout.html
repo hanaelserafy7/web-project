@@ -28,29 +28,18 @@
     
                 
                 <div class="group">
-                    <label for="date"> CVV </label>
-                    <input type="text" name="date" id="date">
+                    <label for="cvv"> CVV </label>
+                    <input type="text" name="cvv" id="cvv">
+                </div>
+                <div class="group">
+                    <label for="month"> month </label>
+                    <input type="text" name="month" id="month">
+                </div>
+                <div class="group">
+                    <label for="year"> year </label>
+                    <input type="text" name="year" id="year">
                 </div>
     
-                <div class="group">
-                    <label for="country">Month</label>
-                    <select name="country" id="country">
-                        <option value="">Choose..</option>
-                        <option value="">01</option>
-                        <option value="">02</option>
-                        <option value="">03</option>
-                    </select>
-                </div>
-    
-                <div class="group">
-                    <label for="city">Year</label>
-                    <select name="city" id="city">
-                        <option value="">Choose..</option>
-                        <option value="">24</option>
-                        <option value="">23</option>
-                        <option value="">25</option>
-                    </select>
-                </div>
             </div>
             <div class="return">
                 <div class="row">
@@ -62,20 +51,67 @@
                     <div class="totalPrice">$550</div>
                 </div>
             </div>
-            <a href="header.html" class="buttonCheckout">PAY NOW</a>
-            </div>
+            <button class="buttonCheckout" id="payButton">PAY NOW</button>
+            <a href="#" class="keepShopping">Keep Shopping</a>
+        </div>
     </div>
 </div>
+<script>
+    
+    function validateForm() {
+        
+        var name = document.getElementById('name').value;
+        var card = document.getElementById('Card').value;
+        var cvv = document.getElementById('cvv').value;
+        var month = document.getElementById('month').value;
+        var year = document.getElementById('year').value;
 
+        
+        if (name === '') {
+            alert('Please enter your name');
+            return false;
+        }
+
+        if (isNaN(card) || card === '' || card.length !== 10) {
+            alert('Please enter a valid 10-digit card number');
+            return false;
+        }
+
+        if (isNaN(cvv) || cvv === '' || cvv.length !== 3) {
+            alert('CVV must be a 3-digit number');
+            return false;
+        }
+
+        if (isNaN(month) || month === '' || month.length !== 2 || parseInt(month) < 1 || parseInt(month) > 12) {
+            alert('Month must be a 2-digit number between 01 and 12');
+            return false;
+        }
+
+        if (isNaN(year) || year === '' || year.length !== 2) {
+            alert('Year must be a 2-digit number');
+            return false;
+        }
+
+        
+        alert('Your payment is successful!');
+        return true;
+    }
+
+    
+    document.getElementById('payButton').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        validateForm(); 
+    });
+</script>
 
 
 </body>
 </html>
------------------------------------------------------------------------------------------------
+-------------------------------------------------
 .container{
     background-color: black;
     display: flex;
-    justify-content: center; /* Horizontally center the content */
+    justify-content: center; 
     align-items: center;
     
     
@@ -142,10 +178,9 @@
     font-weight: bold;
     font-size: x-large;
 }
-.buttonCheckout{
-    width: 100%;
+.buttonCheckout {
+    width: calc(50% - 5px); 
     height: 40px;
-    /* border: none; */
     border-radius: 10px;
     background-color: black;
     margin-top: 30px;
@@ -153,7 +188,7 @@
     color: white;
     text-decoration: none;
     padding: 4px 26px;
-    
+    margin-right: 5px; 
 }
 
 .returnCart h1{
@@ -178,4 +213,16 @@
 .returnCart .list .item .returnPrice{
     font-size: large;
     font-weight: bold;
+}
+.keepShopping {
+    display: inline-block;
+    width: calc(30% - 5px); 
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
 }
