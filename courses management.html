@@ -283,16 +283,14 @@
             });
         });
 
-        // Add event listener for form submission
         const addCourseForm = document.getElementById('add-course-form');
         addCourseForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             const courseName = document.getElementById('course-name').value;
             addNewCourse(courseName);
-            addCourseForm.reset(); // Reset the form after submission
+            addCourseForm.reset(); 
         });
 
-        // Function to add a new course to the table
         function addNewCourse(courseName) {
             const tbody = document.querySelector('.course-list tbody');
             const newRow = document.createElement('tr');
@@ -308,13 +306,12 @@
             attachDeleteListener(newRow);
         }
 
-        // Function to attach delete listener to a newly added row
         function attachDeleteListener(row) {
             const deleteButton = row.querySelector('.btn.delete');
             deleteButton.addEventListener('click', function() {
                 const courseId = row.getAttribute('data-id');
                 if (confirm(`Are you sure you want to delete Course ${courseId}?`)) {
-                    row.remove(); // Remove the row from the table
+                    row.remove(); 
                     alert(`Course ${courseId} successfully deleted.`);
                 }
             });
