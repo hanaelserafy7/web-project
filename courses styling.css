@@ -82,17 +82,17 @@
       float: center;
     }
     .buttons {
-      clear: both; /* Clear floated elements */
+      clear: both; 
       margin-top: 5px;
-      text-align: center; /* Align buttons to the right */
-      padding-right: 20px; /* Add some padding to the right */
+      text-align: center; 
+      padding-right: 20px; 
       margin-left: 20px;
     }
     .button {
       float: right;
       padding: 10px 30px;
-      background-color: gray; /* Blue background */
-      color: white; /* White text */
+      background-color: gray;
+      color: white;
       text-align: center;
       text-decoration: none;
       font-size: 16px;
