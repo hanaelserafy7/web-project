@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    .course-list {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .course-list table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .course-list th, .course-list td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .course-list th {
+        background-color: #f2f2f2;
+    }
+    .btn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Admin Dashboard</h1>
+    <div class="course-list">
+        <h2>Course List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-id="1">
+                    <td>1</td>
+                    <td>Entrepreneurship and Business Life Coach Certification</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr data-id="2">
+                    <td>2</td>
+                    <td>The "Best" Startup Pitch Deck - How To Raise Venture Capital</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sales and Persuasion Skills for Startups</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr><tr>
+                    <td>4</td>
+                    <td>Value Centric Selling - How to Sell on Value, Not Price</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Chief Financial Officer Leadership Program</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>How to Manage & Influence Your Virtual Team</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Introduction to HTML</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>JavaScript Fundamentals </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>The Complete Android N Developer Course</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Complete C# Unity Game Developer 2D</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Ionic - Build iOS, Android & Web Apps with Ionic & Angular</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Unity Game Development Build 2D & 3D Games</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>The BEST Cryptocurrency Course for ALL Levels</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Blockchain and Bitcoin Fundamentals</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Complete Personal Finance Course: Earn, Save and Invest</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Intro to Investment Banking, M&A, IPO, Modeling</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Advanced Stock Trading Course + Strategies</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Investing For Beginners: The Complete Course</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Foundations of Networking
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Introduction to Operating Systems
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Foundations of Cyber Security
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Operating System Crash Course For Beginners</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>How to Build a PC for beginners
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Computer Hardware Engineering
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Web Design For Beginners: Real Woeld Coding in HTML & CSS</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>WordPress Development with Bootstrap: The Complete Course</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Anatomy for Figure Drawing: Mastering the Human Figure
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Become a Professional Graphic Designer
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Introduction to Game Localization</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Learn Blender 3D Modeling for Unity Video Game Development</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Master Course in Social Media marketing</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Marketing Fundamentals: Discover The 5 Marketing Pillars
+                    </td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>Intro to Branding</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>Master Course in Business Branding and Brand Management</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td> Communication Skills for Beginners</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Managing Social Media with Public Relations</td>
+                    <td><button class="btn edit">Edit</button></td>
+                    <td><button class="btn delete">Delete</button></td>
+                </tr>
+          </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Add New Course</h2>
+        <form id="add-course-form">
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" name="course-name">
+            <button type="submit" class="btn">Add Course</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const editButtons = document.querySelectorAll('.course-list .btn.edit');
+        const deleteButtons = document.querySelectorAll('.course-list .btn.delete');
+
+        // Add event listeners for edit buttons
+        editButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                const courseId = button.closest('tr').getAttribute('data-id');
+                alert(`Course ${courseId} successfully edited.`);
+            });
+        });
+
+        // Add event listeners for delete buttons
+        deleteButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                const row = button.closest('tr');
+                const courseId = row.getAttribute('data-id');
+                if (confirm(`Are you sure you want to delete Course ${courseId}?`)) {
+                    row.remove(); // Remove the row from the table
+                    alert(`Course ${courseId} successfully deleted.`);
+                }
+            });
+        });
+
+        // Add event listener for form submission
+        const addCourseForm = document.getElementById('add-course-form');
+        addCourseForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const courseName = document.getElementById('course-name').value;
+            addNewCourse(courseName);
+            addCourseForm.reset(); // Reset the form after submission
+        });
+
+        // Function to add a new course to the table
+        function addNewCourse(courseName) {
+            const tbody = document.querySelector('.course-list tbody');
+            const newRow = document.createElement('tr');
+            const courseId = tbody.children.length + 1;
+            newRow.setAttribute('data-id', courseId);
+            newRow.innerHTML = `
+                <td>${courseId}</td>
+                <td>${courseName}</td>
+                <td><button class="btn edit">Edit</button></td>
+                <td><button class="btn delete">Delete</button></td>
+            `;
+            tbody.appendChild(newRow);
+            attachDeleteListener(newRow);
+        }
+
+        // Function to attach delete listener to a newly added row
+        function attachDeleteListener(row) {
+            const deleteButton = row.querySelector('.btn.delete');
+            deleteButton.addEventListener('click', function() {
+                const courseId = row.getAttribute('data-id');
+                if (confirm(`Are you sure you want to delete Course ${courseId}?`)) {
+                    row.remove(); // Remove the row from the table
+                    alert(`Course ${courseId} successfully deleted.`);
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
