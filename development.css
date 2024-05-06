@@ -35,31 +35,24 @@
   }
   
   .menu {
-    display: flex;
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     z-index: 1000;
     position: absolute;
-    top:63px;
+    top: 58px;
     left: 0;
-    background-color:black !important;
-    width: 25%;
-    padding-left: 10px;
+    background-color:rgb(66, 65, 65) ;
+    width: 26%;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
   
-  }
-  .menu a{
-    transition: 1s ease;
-  }
-  .menu a:hover{
-  background-color: #666;
-  transform: scale(1.1);
-  }
-  .search{
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    font-size: 40px;
+  .Search{
+    width: 80%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-radius:  5px 5px 5px 5px;
   }
   
   input[type="checkbox"] {
@@ -83,10 +76,14 @@
     border-top: 1px solid #ccc;
     margin: 10px 0;
   }
-  
+  .categories{
+    padding-bottom: 500px;
+    margin-top: 20px;
+  }
   .categories p {
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.2rem;
   }
   
   .categories ul {
@@ -101,8 +98,9 @@
   .categories li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1em;
   }
-  
+
   .categories li a:hover {
     text-decoration: underline;
   }
@@ -247,7 +245,13 @@
     padding: 50px 0; 
     text-align: center; 
   }
-  
+  .about{
+    color: white;
+    text-decoration: none;
+  }
+  .about:hover{
+  text-decoration: underline;
+  }
   .course-list {
     list-style-type: none; 
     padding: 0; 
