@@ -43,7 +43,7 @@
     position: absolute;
     top:63px;
     left: 0;
-    background-color:black !important;
+    background-color:black;
     width: 25%;
     padding-left: 10px;
   
@@ -135,6 +135,7 @@
     padding-top: 70px;
     padding-bottom: 10px;
   }
+ 
   
   .topnav button {
     border: none;
@@ -360,9 +361,14 @@
     background-color: #3d3d3d;
     min-width: 160px;
     z-index: 1;
-    margin-top: 10px;
-    box-shadow: 8px 8px 8px grey;
+    box-shadow: 8px 8px 8px rgb(152, 151, 151);
 
+  }
+
+  .course{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .dropdown-content2 a {
@@ -380,10 +386,7 @@
   
   .dropdowncategory:hover .dropdown-content2 {
     display: flex;
-    flex-direction: column;    
-    
-
-    
+    flex-direction: column;
   }
   .catg button.button1 {
     border: none;
@@ -403,6 +406,9 @@
   {
     background-color: #ddd;
 
-
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
   }
   
