@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="newheader.css">
+    
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu">
+            <input type="text" class="Search" placeholder="Search" id="Search">
+            <button onclick="search()">Search</button>
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
+            <a href="userprofile.html" class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+              <span class="profile-initials">LA</span>
+            </a>
+            <hr>
+            <div class="categories">
+                <p>Categories:</p>
+                <ul>
+                    
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="IT.html">IT & Software</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="marketing.html">Marketing</a></li>
+                </ul>
+                <hr>
+                <a href="maincourses.html">View all courses</a>
+            </div>
+        </div>
+        <a href="newheader.html" class="logo">LearnHub</a>
+        <nav class="navigation">
+            <a href="login.html">log in</a>
+            <a href="signup.html">Sign up</a>
+            <a href="userprofile.html" class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+              <span class="profile-initials">LA</span>
+            </a>
+        </nav>
+        <div class="iconCart">
+        
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></i></a>
+          <div class="totalQuantity">1</div>
+      </div>
+  
+      </header>
+<div class="container">
+    <div class="checkoutLayout">
+
+
+        <div class="right">
+            <h1>Checkout</h1>
+
+            <div class="form">
+                <div class="group">
+                    <label for="name"> Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="group">
+                    <label for="Card">Card Number</label>
+                    <input type="text" name="Card" id="Card">
+                </div>
+    
+                
+                <div class="group">
+                    <label for="date"> CVV </label>
+                    <input type="text" name="date" id="date">
+                </div>
+    
+                <div class="group">
+                    <label for="country">Month</label>
+                    <select name="country" id="country">
+                        <option value="">Choose..</option>
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                    </select>
+                </div>
+    
+                <div class="group">
+                    <label for="city">Year</label>
+                    <select name="city" id="city">
+                        <option value="">Choose..</option>
+                        <option value="">24</option>
+                        <option value="">23</option>
+                        <option value="">25</option>
+                    </select>
+                </div>
+            </div>
+            <div class="return">
+                <div class="row">
+                    <div>Total Quantity</div>
+                    <div class="totalQuantity">1</div>
+                </div>
+                <div class="row">
+                    <div>Total Price</div>
+                    <div class="totalPrice">$550</div>
+                </div>
+            </div>
+            <a href="newheader.html" class="buttonCheckout">PAY NOW</a>
+            </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+

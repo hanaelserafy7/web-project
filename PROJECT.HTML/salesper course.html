@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Sales and Persuasion Skills for Startups
+    </title>
+    <link rel="stylesheet" href="courses styling.css">
+ 
+    <script src="timer.js"></script>
+</head>
+<body>
+  <header>Business</header>
+
+
+
+
+<section>
+      <div class="container">
+        <div class="course">
+          <div><h1><strong>Sales and Persuasion Skills for Startups
+          </strong></h1></div>
+
+          <div class="course-data">
+            <div class="course-sub-data">
+              <img
+                src="https://img.freepik.com/free-vector/hand-drawn-business-deal-illustration_23-2149540615.jpg?t=st=1714583535~exp=1714587135~hmac=ca417d88d2b9a6266985d17b46a5d2f4ca857958eb8e8846cf52952a2cd9bc25&w=740"
+                alt="Sales and Persuasion Skills for Startups
+                ">
+              
+              <div class="price-box">
+                <p><s>Original Price: $170</s></p>
+                <p class="discount">Discount: 5%</p>
+                <p>Final Price: $161.5</p>
+                <div id="timer"></div>
+              </div>
+
+              <div class="buttons">
+                <br />
+                <a href="#" class="button">Enroll Now</a>
+                <button class="button">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="course-content">
+              <p><strong>Level: Beginner</strong></p>
+              <p>
+                <strong>Description:<br /><br /></strong>The entrepreneur's sure guide to getting a 'Yes'
+              <p><strong>Requirements: None
+            </strong></p>
+              <table>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>How to get the most out of the course
+                      </li>
+                      <li>How to structure a sales call – with you in control
+                    </li>
+                      <li>Closing techniques – getting to a ‘yes’
+                      </li>
+                    
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                        <li>Powerful questioning techniques
+
+                        </li>
+                        <li>Selling ‘off the page’ – a proven way to generate high quality sales leads</li>
+                      
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <p>Who's this course for: </p>
+              <ul>
+                    <li>It is not intended for professional salespeople wanting to sharpen existing skills. It is aimed squarely at entrepreneurs, startups, busy business owners who want quickly to gain the essential skills of selling and persuading.
+                    </li>
+                  
+                 
+              </ul>
+              <p><strong>Duration:</strong>3h </p>
+              <p><strong>Instructor</strong><br />Len Smith
+              </p>
+              <p>
+                For the past 20 odd years Len has run his own business, Copywriting On Demand and manages The-Writers-Guru.
+
+                He works from home, writing copy for organisations around the world - and lots of them have become personal friends.              <p>
+                <strong>Rating:</strong> <span class="rating">4.4</span>/5
+                (based on 13k ratings)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        function countdown() {
+            const endTime = new Date();
+            endTime.setMonth(endTime.getMonth() + 2);
+
+            const timer = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("timer").innerHTML = "Sale ends in: " + days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById("timer").innerHTML = "Sale has ended";
+                }
+            }, 1000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            countdown();
+        });
+    </script>
+  </body>
+</html>

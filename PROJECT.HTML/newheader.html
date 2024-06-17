@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="newheader.css">
+    <script src="newheader.js"></script>
+    <title>Header</title>
+</head>
+<body>
+    
+    <header >
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu">
+            <input type="text" class="Search" placeholder="Search" id="Search">
+            <button onclick="search()">Search</button>
+            <a href="signup.html" class="signup">Sign Up</a>
+            <a href="login.html" class="login">Log In</a>
+            <a href="userprofile.html" class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+              <span class="profile-initials">LA</span>
+            </a>
+            <hr>
+            <div class="categories">
+                <p>Categories:</p>
+                <ul>
+                    
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="IT.html">IT & Software</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="marketing.html">Marketing</a></li>
+                </ul>
+                <hr>
+                <a href="maincourses.html">View all courses</a>
+            </div>
+        </div>
+        <a href="newheader.html" class="logo">LearnHub</a>
+        <nav class="navigation">
+            <a href="login.html">log in</a>
+            <a href="signup.html">Sign up</a>
+            <a href="userprofile.html" class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+              <span class="profile-initials">LA</span>
+            </a>
+        </nav>
+        <div class="iconCart">
+        
+          <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></i></a>
+          <div class="totalQuantity">1</div>
+      </div>
+  
+      </header>
+      <div class="cart">
+          <h2>
+              CART
+          </h2>
+          <div class="listCart">
+              <div class="item">
+                  <img src="https://img-c.udemycdn.com/course/750x422/246154_d8b0_3.jpg">
+                  <div class="content">
+                      <div class="name">Web Design for Beginners: Real World Coding in HTML & CSS</div>
+                      <div class="price">$550 / 1 product</div>
+                  </div>
+                  <div class="quantity">
+                      <button>-</button>
+                      <span class="value">1</span>
+                      <button>+</button>
+                  </div>
+              </div>
+          </div>
+          <div class="emptyCartMessage hidden">Your cart is empty. Cannot proceed to checkout.</div>
+        <div class="buttons">
+            <div class="close">CLOSE</div>
+            <div class="checkout">
+                <a href="checkout.html" class="checkoutLink">CHECKOUT</a>
+            </div>
+        </div>
+          <div class="buttons">
+              <div class="close">
+                  CLOSE
+              </div>
+              <div class="checkout">
+                  <a href="checkout.html">CHECKOUT</a>
+              </div>
+          </div>
+      </div>
+
+    <div class="slideshow-container" >
+        <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/copyspace-business-elements_23-2147986611.jpg?t=st=1714479244~exp=1714482844~hmac=639c4ad19a754b70dac98aacfb191aa90b675b4a30e793a2e5331284f6b43441&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/stationery-lying-near-keyboard_23-2147864691.jpg?t=st=1715010194~exp=1715013794~hmac=b62966889e0d22cb5e4b4d64c4ab21304a809ee08bf88bb7a7cd2656de725db2&w=996" style="width:100%" alt="slide"></a>
+            <div class="text1"><h1>Join courses now for free</h1>
+              <a href="signup.html" class="btn1">Sign up for free</a>
+          </div>
+          </div>
+        
+          <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" class="photos"><img src="https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?t=st=1714480017~exp=1714483617~hmac=24902be0925cf6a22cabfb2ca233f5ff791cdec6f0040d81abf6bfadefdbd62c&w=1480" style="width:100%" alt="slide"></a>
+            <div class="text2"><h1>Multiple Courses in the palm of your hand</h1>
+              <a href="maincourses.html" class="btn2">View available courses</a>
+          </div>
+          </div>
+        
+          <div class="mySlides">
+            <a href="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" class="photos"><img src="https://img.freepik.com/free-photo/office-supplies_23-2148103974.jpg?t=st=1714480291~exp=1714483891~hmac=f88e2fdaf79bfd4912d0ba7f95695fef96615431c1bd9f190970e27cc1e9f487&w=2000" style="width:100%" alt="slide"></a>
+            <div class="text3"><h1>Find Your Course Compass: Navigate Your Way to the Perfect Fit!</h1>
+              <a href="survey page.html" class="btn3">Take the survey now!</a>
+          </div>
+          </div>
+        
+         
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+          <br>
+          <div class="body1" id="about">
+            <h1>About us</h1>
+            <p>At LearnHub, we are passionate about education and empowering individuals to reach their full potential through learning. With a diverse range of courses designed to cater to various interests and skill levels, we strive to provide an enriching and accessible learning experience for all. Our team of experienced educators and industry professionals is dedicated to delivering high-quality content that is both informative and engaging. Whether you're looking to enhance your professional skills, explore new interests, or pursue personal development, we have a course for you. Join us on this journey of discovery and unlock new opportunities for growth and success.</p>
+          </div>
+          <div class="testimonials" >
+            <div class="testimonial-card">
+              <h3>Review 1</h3>
+              <p>I recently enrolled in a course on this platform, and I must say, it exceeded my expectations! The content was comprehensive, the instructors were knowledgeable, and the learning experience was truly enjoyable. I highly recommend it to anyone looking to expand their knowledge and skills.</p>
+              <p>- Yomna</p>
+            </div>
+            <div class="testimonial-card">
+              <h3>Review 2</h3>
+              <p>تجربة ممتازة! لقد استمتعت بشكل كبير بالدورة التدريبية التي قمت بالتسجيل فيها. المحتوى كان مفيداً للغاية وساعدني في تطوير مهاراتي بشكل كبير. أوصي بهذه الدورة لكل من يبحث عن تعلم جديد ومفيد</p>
+              <p>- Moatassem</p>
+            </div>
+            <div class="testimonial-card">
+                <h3>Review 3</h3>
+                <p>.تجربة سيئة جداً! للأسف، لم يكن الدورة التدريبية التي قمت بالتسجيل فيها مفيدة على الإطلاق. كانت المحاضرات غير واضحة والمواد غير منظمة، ولم أستفد بتاتاً منها. لا أنصح بها على الإطلاق</p>
+                <p>- Rawan</p>
+              </div>
+              <div class="testimonial-card">
+                <h3>Review 4</h3>
+                <p>I've been using this platform for a while now, and it's been a game-changer for me. The variety of courses available caters to all interests, and the flexibility of learning at my own pace is invaluable. I've already recommended it to all my friends!</p>
+                <p>- Norhan</p>
+              </div>
+              <div class="testimonial-card">
+                <h3>Review 5</h3>
+                <p>تجربة رائعة! كنت متردداً في البداية قبل التسجيل في الدورة، ولكن بمجرد بدء التعلم، وجدت نفسي متحمساً ومستمتعاً بكل درس. الدعم الفني كان ممتازاً وساعدني في حل أي مشكلة واجهتني. أشكر فريق العمل على تقديم تجربة تعليمية ممتازة</p>
+                <p>- Hana</p>
+              </div>
+          </div>
+
+          <div class="end-section">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: learnhub@gmail.com</p>
+                <p>Phone: +2 100 565 8748</p>
+                <a href="#about" class="about">About us</a>
+
+ 
+            </div>
+            
+            <h2>Popular Courses</h2>
+            <ul class="course-list">
+              <li><a href="business.html">Business</a></li>
+              <li><a href="development.html">Development</a></li>
+              <li><a href="IT.html">IT & Software</a></li>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="marketing.html">Marketing</a></li>
+            </ul>
+            
+        </div>
+       
+
+
+</body>
+</html>
