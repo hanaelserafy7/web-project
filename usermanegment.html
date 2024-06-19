@@ -5,18 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="adminmanagement.css">
 <title>Admin Dashboard</title>
-
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
 </head>
 <body>
 <div class="container">
     <h1>Admin Dashboard</h1>
-    <div class="course-list">
+    <div class="user-list">
         <h2>Users List</h2>
-        <table>
+        <table id="user-table">
             <thead>
                 <tr>
                     <th>User ID</th>
-                    <th>UserName</th>
+                    <th>Username</th>
+                    <th>Email</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -24,52 +38,65 @@
             <tbody>
                 <tr data-id="1">
                     <td>1</td>
-                    <td>Moatassem ahmed</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
+                    <td>Moatassem Ahmed</td>
+                    <td>moatassem@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
                 </tr>
                 <tr data-id="2">
                     <td>2</td>
                     <td>Yomna</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
+                    <td>yomna@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
                 </tr>
-                <tr>
+                <tr data-id="3">
                     <td>3</td>
                     <td>Hana</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
-                </tr><tr>
+                    <td>hana@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
+                </tr>
+                <tr data-id="4">
                     <td>4</td>
                     <td>Hassan</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
+                    <td>hassan@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
                 </tr>
-                <tr>
+                <tr data-id="5">
                     <td>5</td>
                     <td>Mohammed</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
+                    <td>mohammed@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
                 </tr>
-                <tr>
+                <tr data-id="6">
                     <td>6</td>
                     <td>Rawan</td>
-                    <td><button class="btn edit">Edit</button></td>
-                    <td><button class="btn delete">Remove user</button></td>
+                    <td>rawan@example.com</td>
+                    <td><button class="btn edit" onclick="editUser(this)">Edit</button></td>
+                    <td><button class="btn delete" onclick="deleteUser(this)">Remove user</button></td>
                 </tr>
-          </tbody>
+            </tbody>
         </table>
     </div>
     <div>
         <h2>Add New User</h2>
-        <form id="add-course-form">
-            <label for="course-name">UserName:</label>
-            <input type="text" id="course-name" name="course-name">
+        <form id="add-user-form">
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
             <button type="submit" class="btn">Add User</button>
         </form>
     </div>
 </div>
 
-<script src="users management.js"></script>
+<script>
+
+</script>
 </body>
 </html>
