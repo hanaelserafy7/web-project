@@ -57,4 +57,71 @@
                 }
             });
         }
+        document.getElementById('add-user-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const userIdInput = document.getElementById('user-id');
+    const usernameInput = document.getElementById('username');
+    const emailInput = document.getElementById('email');
+
+    const userId = userIdInput.value.trim();
+    const username = usernameInput.value.trim();
+    const email = emailInput.value.trim();
+
+    if (!userId || isNaN(userId)) {
+        alert('User ID must be a number.');
+        return;
+    }
+
+    if (!username) {
+        alert('Username is required.');
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Invalid email address.');
+        return;
+    }
+
+    const userTable = document.getElementById('user-table').getElementsByTagName('tbody')[0];
+    const newRow = userTable.insertRow();
+
+    newRow.setAttribute('data-id', userId);
+
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+    const cell3 = newRow.insertCell(2);
+    const cell4 = newRow.insertCell(3);
+    const cell5 = newRow.insertCell(4);
+
+    cell1.textContent = userId;
+    cell2.textContent = username;
+    cell3.textContent = email;
+    cell4.innerHTML = '<button class="btn edit" onclick="editUser(this)">Edit</button>';
+    cell5.innerHTML = '<button class="btn delete" onclick="deleteUser(this)">Remove user</button>';
+
+    // Clear form inputs
+    userIdInput.value = '';
+    usernameInput.value = '';
+    emailInput.value = '';
+});
+
+function deleteUser(button) {
+    const row = button.parentElement.parentElement;
+    row.remove();
+}
+
+function editUser(button) {
+    const row = button.parentElement.parentElement;
+    const userId = row.cells[0].textContent;
+    const username = row.cells[1].textContent;
+    const email = row.cells[2].textContent;
+
+    document.getElementById('user-id').value = userId;
+    document.getElementById('username').value = username;
+    document.getElementById('email').value = email;
+
+    row.remove();
+}
     });
