@@ -1,0 +1,225 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-left: 7%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  @media screen and (max-width: 1000px) {
+    .navigation a {
+        display: none;
+    }
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color:rgb(66, 65, 65) ;
+    width: 26%;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  
+  .Search{
+    width: 80%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-radius:  5px 5px 5px 5px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    width: 70px;
+  }
+  
+  .menu hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  .categories{
+    padding-bottom: 500px;
+    margin-top: 20px;
+    white-space: nowrap;
+  }
+  .categories p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin-bottom: 5px;
+  }
+  
+  .categories a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .categories a:hover {
+    text-decoration: underline;
+  }
+  .navigation{
+    display: flex;
+  }
+  .navigation a {
+      color: white;
+      text-decoration:none;
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-left: 20px;
+  }
+  .navigation a:hover{
+      color:rgb(168, 165, 165);
+  }
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-body {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-footer button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.open-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-message {
+    margin: 10px 0;
+}
+
+.chat-message.user {
+    text-align: right;
+}
+
+.chat-message.bot {
+    text-align: left;
+}
+
+.chat-message span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.chat-message.user span {
+    background-color: #dcf8c6;
+}
+
+.chat-message.bot span {
+    background-color: #f1f0f0;
+}
